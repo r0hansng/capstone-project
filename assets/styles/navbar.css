@@ -1,0 +1,32 @@
+nav {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid rgba(255, 255, 255, 24%);
+}
+
+#logo {
+	font: 700 42px/42px 'sarpanch', sans-serif;
+	color: rgba(255, 255, 255, 100%);
+}
+
+#tabs > ul{
+	font: 400 28px/32px 'rajdhani', sans-serif;
+	color: rgba(255, 255, 255, 100%);
+	display: flex;
+	justify-content: space-evenly;
+	list-style: none;
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+
+#tabs > ul > a {
+	text-decoration: none;
+	color: rgba(255, 255, 255, 100%);
+	padding: 0 1.25rem 0 1.25rem;
+	transition: 0.15s;
+
+	&:hover {
+		cursor: pointer;
+		color: rgba(128, 128, 128, 1)
+	}
+}
