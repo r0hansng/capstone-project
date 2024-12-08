@@ -1,0 +1,125 @@
+@import url(https://fonts.googleapis.com/css2?family=Sarpanch:wght@400;500;600;700;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Sarpanch:wght@400;500;600;700;800;900&display=swap);
+
+* {
+  text-decoration: none;
+}
+  
+html {
+  scroll-behavior: smooth;
+  max-width: 100%;
+}
+  
+body {
+  background-color: rgb(0, 0, 0);
+  margin: 0;
+	padding: 0 48px 0 48px;
+}
+
+h1 {
+	color: rgb(255, 255, 255, 100%);
+}
+
+p {
+  color: rgb(255, 255, 255, 100%);
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 96px 0 24px 0;
+}
+
+#hero-section {
+  padding: 96px 0 96px 0;
+}
+
+#hero-header {
+  font: 400 120px/120px 'rajdhani', sans-serif;
+  text-align: center;
+}
+
+#projects {
+  padding: 48px 0 48px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 24%) ;
+}
+
+#project-header {
+  font: 400 34px/40px 'rajdhani', sans-serif;
+}
+
+#project-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 24px;
+  font-family: 'rajdhani', sans-serif;
+}
+
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 96px 0 96px 0;
+}
+
+#about p {
+  font: 400 48px/52px 'rajdhani', sans-serif;
+  text-align: center;
+  width: 900px;
+  height: 208px;
+}
+
+#contact-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#contact-section h1{
+  font: 400 28px/32px 'rajdhani', sans-serif;
+}
+
+#contact-section p{
+  font: 500 17px/28px 'rajdhani', sans-serif;
+  width: 640px;
+}
+
+#contact-button {
+  padding: 12px 24px 12px 24px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background-color: inherit;
+  color: rgba(255, 255, 255, 1);
+  font: 600 20px/24px 'rajdhani', sans-serif;
+  transition: 0.15s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgba(20, 87, 255, 1);
+  }
+}
+
+.project-button {
+  padding: 8px 16px 8px 16px;
+  background-color: rgba(20, 87, 255, 1);
+  color: rgba(255, 255, 255, 1);
+  border: none;
+  font-family: 'rajdhani', sans-serif;
+  font-weight: 600;
+}
+
+.details-container {
+  padding: 12px 0 12px 0;
+}
+
+.details-container h1{
+ font: 400 20px/24px 'rajdhani', sans-serif;
+}
+
+.details-container p{
+ font: 400 15px/20px 'rajdhani', sans-serif;
+}
+
+footer h1 {
+  font: 400 28px/32px 'rajdhani', sans-serif;
+}
