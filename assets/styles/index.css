@@ -1,6 +1,16 @@
 @import url(https://fonts.googleapis.com/css2?family=Sarpanch:wght@400;500;600;700;800;900&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Sarpanch:wght@400;500;600;700;800;900&display=swap);
 
+:root {
+  --background-color: rgba(0, 0, 0, 1);
+  --text-color: rgba(255, 255, 255, 100%);
+  --primary-color: rgba(20, 87, 255, 1);
+  --border-color: rgba(255, 255, 255, 24%);
+  --secondary-border-color: rgba(255, 255, 255, 0.16);
+  --font-primary: 'rajdhani', sans-serif;
+  --font-secondary: 'sarpanch', sans-serif;
+}
+
 * {
   text-decoration: none;
 }
@@ -11,13 +21,13 @@ html {
 }
 
 body {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--background-color);
   margin: 0;
-  padding: 0 48px 0 48px;
-  animation: loading 1s forwards;
+  padding: 0 48px;
+  animation: fadeIn 1s forwards;
 }
 
-@keyframes loading {
+@keyframes fadeIn {
   from {
     opacity: 0;
   }
@@ -26,12 +36,9 @@ body {
   }
 }  
 
-h1 {
-	color: rgb(255, 255, 255, 100%);
-}
-
+h1,
 p {
-  color: rgb(255, 255, 255, 100%);
+	color: var(--text-color);
 }
 
 footer {
@@ -42,7 +49,7 @@ footer {
 }
 
 #hero-section {
-  padding: 96px 0 96px 0;
+  padding: 96px 0;
 }
 
 #hero-header {
@@ -51,30 +58,30 @@ footer {
 }
 
 #projects {
-  padding: 48px 0 48px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 24%) ;
+  padding: 48px 0;
+  border-bottom: 1px solid var(--border-color) ;
 }
 
 #project-header {
-  font: 400 34px/40px 'rajdhani', sans-serif;
+  font: 400 34px/40px var(--font-primary);
 }
 
 #project-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
-  font-family: 'rajdhani', sans-serif;
+  font-family: var(--font-primary);
 }
 
 #about {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 96px 0 96px 0;
+  padding: 96px 0;
 }
 
 #about p {
-  font: 400 48px/52px 'rajdhani', sans-serif;
+  font: 400 48px/52px var(--font-primary);
   text-align: center;
   width: 900px;
   height: 208px;
@@ -87,49 +94,49 @@ footer {
 }
 
 #contact-section h1{
-  font: 400 28px/32px 'rajdhani', sans-serif;
+  font: 400 28px/32px var(--font-primary);
 }
 
 #contact-section p{
-  font: 500 17px/28px 'rajdhani', sans-serif;
+  font: 500 17px/28px var(--font-primary);
   width: 640px;
 }
 
 #contact-button {
-  padding: 12px 24px 12px 24px;
-  border: 1px solid rgba(255, 255, 255, 0.16);
+  padding: 12px 24px;
+  border: 1px solid var(--secondary-border-color);
   background-color: inherit;
-  color: rgba(255, 255, 255, 1);
-  font: 600 20px/24px 'rajdhani', sans-serif;
+  color: var(--text-color);
+  font: 600 20px/24px var(--font-primary);
   transition: 0.15s;
 
   &:hover {
     cursor: pointer;
-    background-color: rgba(20, 87, 255, 1);
+    background-color: var(--primary-color);
   }
 }
 
 .project-button {
   padding: 8px 16px 8px 16px;
-  background-color: rgba(20, 87, 255, 1);
-  color: rgba(255, 255, 255, 1);
+  background-color: var(--primary-color);
+  color: var(--text-color);
   border: none;
-  font-family: 'rajdhani', sans-serif;
+  font-family: var(--font-primary);
   font-weight: 600;
 }
 
 .details-container {
-  padding: 12px 0 12px 0;
+  padding: 12px 0;
 }
 
 .details-container h1{
- font: 400 20px/24px 'rajdhani', sans-serif;
+ font: 400 20px/24px var(--font-primary);
 }
 
 .details-container p{
- font: 400 15px/20px 'rajdhani', sans-serif;
+ font: 400 15px/20px var(--font-primary);
 }
 
 footer h1 {
-  font: 400 28px/32px 'rajdhani', sans-serif;
+  font: 400 28px/32px var(--font-primary);
 }
