@@ -53,7 +53,7 @@ footer {
 }
 
 #hero-header {
-  font: 400 120px/120px 'rajdhani', sans-serif;
+  font: 400 120px/120px var(--font-primary);
   text-align: center;
 }
 
