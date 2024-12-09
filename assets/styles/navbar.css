@@ -11,7 +11,7 @@ nav {
 
 #tabs > ul{
 	font: 400 28px/32px var(--font-primary);
-	color: rgba(255, 255, 255, 100%);
+	color: var(--text-color);
 	display: flex;
 	justify-content: space-evenly;
 	list-style: none;
