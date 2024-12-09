@@ -125,6 +125,10 @@ footer {
   font-weight: 600;
 }
 
+.details-container {
+  padding: 12px 0;
+}
+
 .details-container h1{
  font: 400 20px/24px var(--font-primary);
 }
