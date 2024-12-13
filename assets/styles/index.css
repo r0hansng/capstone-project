@@ -42,9 +42,6 @@ p {
 }
 
 footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 96px 0 24px 0;
 }
 
@@ -74,9 +71,6 @@ footer {
 }
 
 #about {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 96px 0;
 }
 
@@ -85,12 +79,6 @@ footer {
   text-align: center;
   width: 900px;
   height: 208px;
-}
-
-#contact-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 #contact-section h1{
@@ -112,7 +100,6 @@ footer {
 
   &:hover {
     cursor: pointer;
-    background-color: var(--primary-color);
   }
 }
 
@@ -123,6 +110,13 @@ footer {
   border: none;
   font-family: var(--font-primary);
   font-weight: 600;
+  transition: 0.15s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgb(17, 74, 218);
+    font-size: 0.875rem;
+  }
 }
 
 .details-container {
@@ -135,6 +129,22 @@ footer {
 
 .details-container p{
  font: 400 15px/20px var(--font-primary);
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 footer h1 {
