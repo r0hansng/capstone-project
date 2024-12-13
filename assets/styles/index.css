@@ -100,6 +100,8 @@ footer {
 
   &:hover {
     cursor: pointer;
+    background-color: rgb(47, 47, 47);
+    border: 1px solid var(--background-color);
   }
 }
 
